@@ -1,0 +1,10 @@
+<h1>Create a New Student</h1>
+
+<form action="<%= students_path %>" method="POST">
+	<label>Student Form</label>	<br>
+	First Name: <%= text_field_tag :'first_name'%><br>
+	Last Name: <%= text_field_tag :'last_name'%><br>
+
+	<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+	<%= submit_tag "Submit Student" %>
+</form>
